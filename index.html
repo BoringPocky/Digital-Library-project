@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Random new things to learn</title>
+	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+	<meta charset="UTF-8">
+	<meta name="description" content="My Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Import CSS -->
+	<script type="text/javascript" src='jquery.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans&display=swap" rel="stylesheet">
+	<!--THE STYLE AND FUNCTION IS ON THE SAME CODE PAGE -->
+</head>
+
+<!-- MESSAGE: This index page is made so that once you click on your number link, you can't never get back to the page -->
+<!-- HOWEVER there is a way to get back in the 'ABOUT' page of your number link-->
+
+<body>
+	<header>
+		
+	</header>
+	<main>
+		<h1>Concongratulation! You have found KIRA!</h1>	
+		<h2>A place to learn some random new fun things</h1>
+	
+		<button class="star" onclick="myFunction()">
+			<img src="website_logo.png" >
+		</button>
+
+		<h1>CLICK KIRA!!!</h1>
+		<h2>Your number is:</h2>
+		<h1 id="number_show">
+			<!-- THIS IS WHERE THE RANDOM NUMBER WILL SHOW -->
+		</h1>
+		
+		<h2>Click on your number below</h2>
+
+		<ul id="list_container">
+			<li class="number"><a href="knitting.html">1 </a></li> 
+			<li class="number"><a href="origami.html">2</a></li>
+			<li class="number"><a href="calligraphy.html">3</a></li>
+			<li class="number"><a href="juggle.html">4 </a></li> 
+			<li class="number"><a href="drawing.html">5 </a></li> 
+			<li class="number"><a href="rubikcube.html">6 </a></li> 
+			<li class="number"><a href="creativewriting.html">7 </a></li> 
+			<li class="number"><a href="storytelling.html">8 </a></li> 
+			<li class="number"><a href="self.html">9 </a></li> 
+			<li class="number"><a href="firstaid.html">10</a></li> 
+			<li class="number"><a href="sport.html">11</a></li>
+		</ul>
+		
+	</main>
+
+
+	<footer>	
+	</footer>
+
+
+
+
+<style>
+
+	html {
+  		font-size: 16px;
+  		font-family: 'Open Sans', sans-serif;}
+
+
+
+	body{
+		border:0px;
+		margin:50px 50px;
+		padding:0px;
+		background-color: black;
+		color:#fce55c;
+		text-align: center;}
+
+
+
+
+	main{margin: 45px 10px;}
+	
+	h1{	font-family: 'Luckiest Guy', cursive;
+			color:#fce55c;
+			font-size:30pt;
+			letter-spacing:1px;}
+	
+	h2{	margin-top: -20px;
+		font-size:15pt;
+			color:#fce55c;
+			letter-spacing: 1px;}
+
+
+
+
+	.star{background-color:black;
+		border:none;}
+
+	img{margin-top: -10px;
+		margin-bottom: -10px;
+		width: 50%;
+		/*KIRA ANIMATION*/
+			animation-name:flowing_star;
+			animation-duration: 3s;
+ 			animation-iteration-count: infinite;}
+
+	@keyframes flowing_star {
+ 		0%   {width:50%;}
+ 		25% {width: 55%; margin-top:-30px; margin-bottom:-25px;}
+ 		100% {width:50%;}
+ 	}	
+
+
+
+
+	li{	display: inline-block; 
+		vertical-align: top;
+		font-size:30pt;
+		list-style: none;}
+	
+	a{	
+		/*PLACEMENT*/
+			padding:10px;
+			margin:5px 15px;
+			border-radius: 20%;
+		/*APPEARANCE*/
+			background-color:black;
+			border:3px solid yellow;
+			font-family: 'Luckiest Guy', cursive;
+				text-decoration:none;
+				color:#fce55c;
+		/*EFFECT*/
+			transition: 1s all;}
+
+	a:hover{
+		display: inline-block; 
+		vertical-align: top;
+		list-style: none;
+		margin:-20px -10px;
+		background-color:#fce55c; 
+		border:none;
+			border:none;
+			border-radius: 20%;
+		font-family: 'Luckiest Guy', cursive;
+			font-size:50pt;
+			color: black;
+		transition: 0.25s all;}
+
+</style>
+
+
+
+<script>
+	function myFunction() {
+		// Reference from W3schools (https://www.w3schools.com/js/js_random.asp)
+  var x = Math.floor((Math.random() * 11) + 1);
+  // Change the first number to the desire number
+  document.getElementById("number_show").innerHTML = x;
+	}
+
+</script>
+
+</body>
+
+
+
+
+
+
+

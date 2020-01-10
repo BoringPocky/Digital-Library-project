@@ -1,0 +1,161 @@
+* {
+	/*TO RESET THE BEHAVIOUR OF PADDING*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+  	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+
+html {
+  	font-family: 'Open Sans', sans-serif;
+  		font-size: 16px;}
+
+body{
+	border:0px;
+	margin:-4px 0px;
+	padding:0px;
+	background-image: url(long_background.png);
+}
+
+
+
+/*	HEADER	*/
+header{
+	background-color:#fce55c;
+    width:100%;
+    height:70px;}
+
+h1{	font-family: 'Luckiest Guy', cursive;
+		text-decoration:bold;
+		color:black;
+		position:absolute;
+		font-size:30pt;
+		letter-spacing:1px;
+	margin-top:20px;
+	margin-left:90px;
+	padding-left:3px;}
+
+/*WEBSITE LOGO NEXT TO THE NAME KIRA IN THE HEADER*/
+#image{
+	position:absolute;
+	top:8px; 
+	left:20px;}
+
+#image:hover{
+	top:3px;}
+
+.border_button{
+	/*APPLY TO ALL BUTTON ON HEADER*/
+	margin:4px 0px;
+	padding:10px 20px;}
+
+/*THE ABOUT BUTTON*/
+#about{
+	border: 3px black solid;
+	border-radius: 10%;
+	position:absolute;
+	right:180px;
+	padding:10px 20px 5px 20px;
+	color:black;
+	background-color:#fce55c;
+	font-family: 'Luckiest Guy', cursive;
+		font-size:15pt;
+	cursor: pointer;
+	transition: 0.5s all;}
+#about:hover{
+	font-size: 18pt;
+	color:#fce55c;
+	background-color: black;
+	transition: 0.25s all;}
+
+/*THE CONTENT BUTTON*/
+#content{
+	border: 3px black solid;
+	border-radius: 10%;
+	position:absolute;
+	right:20px;
+	padding:10px 20px 5px 20px;
+	color:black;
+	background-color:#fce55c;
+	font-family: 'Luckiest Guy', cursive;
+		font-size:15pt;
+	cursor: pointer;
+	transition: 0.5s all;}
+#content:hover{
+	font-size: 18pt;
+	color:#fce55c;
+	background-color: black;
+	transition: 0.25s all;}	
+            
+#scrolling_bar{
+    position:fixed;
+    top:100px;
+    right:25px;
+    margin:20px;
+    bottom:0;
+    width:20px;
+    background-color:black;}
+/*HEADER ENDS*/
+
+
+
+/*	MAIN */
+main{
+	text-align:center; 
+	margin: 45px 15px 70px 15px;}
+
+#content_title{
+	font-family: 'Luckiest Guy', cursive;
+		font-size:30pt;
+		text-align: left;
+	margin-left:75px;}
+
+/*BOOKS- THIS SECTION IS FOR THE HOVERING FUNCTION ON THIS PAGE*/
+/*CODE REFERENCE FROM WEEK 8 DOWNLOAD TUTORIAL EXERCISE*/
+.popup {
+	opacity:0;
+	transition: 1s all;
+
+	display: inline-block;
+	width:70%;
+	min-height: 200px;
+	background-color:black;
+	border-radius: 5px;
+	color:#fce55c;
+	padding:30px 50px;
+	font-size:15pt;
+	border: 20px;
+	line-height:40px;
+	text-align: left;}
+
+.popup p {margin-top: 15px;}
+
+.buttons {
+	height:10%;
+	margin: 35px 0px;}
+
+.button {
+	margin:10px 20px;
+	padding: 0px;
+	background-color: #fff;
+	/*BOOKS' APPEARANCE*/
+		border-radius: 10px;
+		border: 0px black solid;}
+
+.button:focus {outline: none;}
+
+.button:active {
+	background-color:#fce55c;
+	color: white;}
+
+.active{
+	opacity: 1;
+	transition: 1s all;}
+/*	MAIN ENDS	*/
+
+
+
+
+
